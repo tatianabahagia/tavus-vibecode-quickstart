@@ -34,11 +34,10 @@ import { naughtyScoreAtom } from "@/store/game";
 import { apiTokenAtom } from "@/store/tokens";
 import { quantum } from 'ldrs';
 
-// Register the quantum loader
 quantum.register();
 
 const timeToGoPhrases = [
-  "I'll need to dash off soon—there’s still so much to prepare for Christmas! But let’s make these last moments count.",
+  "I'll need to dash off soon—there's still so much to prepare for Christmas! But let's make these last moments count.",
   "The elves are calling me back to the workshop soon, but I've got a little more time for you!",
   "I'll be heading out soon—the reindeer are getting restless—but I'd love to hear one more thing before I go!",
 ];
@@ -122,6 +121,7 @@ export const Conversation: React.FC = () => {
           startAudioOff: true,
         })
         .then(() => {
+          daily?.setLocalVideo(true); // Explicitly enable video
           daily?.setLocalAudio(false);
         });
     }
@@ -177,7 +177,12 @@ export const Conversation: React.FC = () => {
           <Video
             id={localSessionId}
             tileClassName="!object-cover"
-            className="absolute bottom-20 right-4 aspect-video h-40 w-24 overflow-hidden rounded-lg border-2 border-[#22C5FE] shadow-[0_0_20px_rgba(34,197,254,0.3)] sm:bottom-12 lg:h-auto lg:w-52"
+            className={cn(
+              "absolute bottom-20 right-4 aspect-video h-40 w-24 overflow-hidden rounded-lg border-2 border-[#22C5FE] shadow-[0_0_20px_rgba(34,197,254,0.3)] sm:bottom-12 lg:h-auto lg:w-52",
+              {
+                "hidden": localVideo.isOff
+              }
+            )}
           />
         )}
         <div className="absolute bottom-8 right-1/2 z-10 flex translate-x-1/2 justify-center gap-4">
