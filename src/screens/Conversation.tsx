@@ -122,7 +122,7 @@ export const Conversation: React.FC = () => {
           startAudioOff: true,
         })
         .then(() => {
-          daily?.setLocalVideo(true); // Explicitly enable video
+          daily?.setLocalVideo(true);
           daily?.setLocalAudio(false);
         });
     }
@@ -179,10 +179,7 @@ export const Conversation: React.FC = () => {
             id={localSessionId}
             tileClassName="!object-cover"
             className={cn(
-              "absolute bottom-20 right-4 aspect-video h-40 w-24 overflow-hidden rounded-lg border-2 border-[#22C5FE] shadow-[0_0_20px_rgba(34,197,254,0.3)] sm:bottom-12 lg:h-auto lg:w-52",
-              {
-                "hidden": localVideo.isOff
-              }
+              "absolute bottom-20 right-4 aspect-video h-40 w-24 overflow-hidden rounded-lg border-2 border-[#22C5FE] shadow-[0_0_20px_rgba(34,197,254,0.3)] sm:bottom-12 lg:h-auto lg:w-52"
             )}
           />
         )}
