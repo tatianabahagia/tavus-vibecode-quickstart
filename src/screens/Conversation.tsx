@@ -33,7 +33,6 @@ import { niceScoreAtom } from "@/store/game";
 import { naughtyScoreAtom } from "@/store/game";
 import { apiTokenAtom } from "@/store/tokens";
 import { quantum } from 'ldrs';
-import { cn } from "@/lib/utils";
 
 quantum.register();
 
