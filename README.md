@@ -4,6 +4,12 @@
 
 The fastest way to get started vibecoding with Tavus CVI. This React quickstart template provides everything you need to create interactive video experiences powered by Tavus's Conversational Video Interface technology.
 
+> ⚠️ **Important Note**: This is a development template only. For production use, you must:
+> - Never expose your Tavus API keys in the frontend
+> - Implement a secure backend service to handle API calls
+> - Use environment variables and proper key management
+> - Follow security best practices for handling sensitive credentials
+
 <br></br>
 ## 🛠️ Tech Stack
 - React
