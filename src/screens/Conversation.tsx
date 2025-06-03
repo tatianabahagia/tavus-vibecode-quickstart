@@ -38,15 +38,15 @@ import { cn } from "@/lib/utils";
 quantum.register();
 
 const timeToGoPhrases = [
-  "I'll need to dash off soon—there's still so much to prepare for Christmas! But let's make these last moments count.",
-  "The elves are calling me back to the workshop soon, but I've got a little more time for you!",
-  "I'll be heading out soon—the reindeer are getting restless—but I'd love to hear one more thing before I go!",
+  "I'll need to dash off soon—let's make these last moments count.",
+  "I'll be heading out soon, but I've got a little more time for you!",
+  "I'll be leaving soon, but I'd love to hear one more thing before I go!",
 ];
 
 const outroPhrases = [
-  "It's time for me to go now—Christmas magic doesn't make itself! Take care, and I'll see you soon!",
-  "I've got to get back to the North Pole—the workshop needs me! Be good, and Merry Christmas until we meet again!",
-  "I must say goodbye for now—the magic of Christmas calls! Stay on the nice list, and I'll see you soon!",
+  "It's time for me to go now. Take care, and I'll see you soon!",
+  "I've got to get back to work. See you next time!",
+  "I must say goodbye for now. Stay well, and I'll see you soon!",
 ];
 
 export const Conversation: React.FC = () => {
@@ -147,9 +147,9 @@ export const Conversation: React.FC = () => {
 
     const naughtyScorePositive = Math.abs(naughtyScore);
     if (naughtyScorePositive > niceScore) {
-      setScreenState({ currentScreen: "naughtyForm" });
+      setScreenState({ currentScreen: "finalScreen" });
     } else {
-      setScreenState({ currentScreen: "niceForm" });
+      setScreenState({ currentScreen: "finalScreen" });
     }
   }, [daily, token]);
 

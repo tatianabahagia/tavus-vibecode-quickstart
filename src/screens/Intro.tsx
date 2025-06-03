@@ -2,11 +2,11 @@ import { AnimatedWrapper } from "@/components/DialogWrapper";
 import React from "react";
 import { useAtom } from "jotai";
 import { screenAtom } from "@/store/screens";
-import { Video, Unlock } from "lucide-react";
+import { Unlock } from "lucide-react";
 import AudioButton from "@/components/AudioButton";
-import santaVideo from "@/assets/video/gloria.mp4";
 import { apiTokenAtom } from "@/store/tokens";
 import { Input } from "@/components/ui/input";
+import gloriaVideo from "@/assets/video/gloria.mp4";
 
 export const Intro: React.FC = () => {
   const [, setScreenState] = useAtom(screenAtom);
@@ -20,7 +20,7 @@ export const Intro: React.FC = () => {
     <AnimatedWrapper>
       <div className="flex size-full flex-col items-center justify-center">
         <video
-          src={santaVideo}
+          src={gloriaVideo}
           autoPlay
           muted
           loop
@@ -39,7 +39,7 @@ export const Intro: React.FC = () => {
 
           <div className="flex flex-col gap-2 items-center mt-4">
             <Input
-              type="text"
+              type="password"
               value={token || ""}
               onChange={(e) => {
                 const newToken = e.target.value;

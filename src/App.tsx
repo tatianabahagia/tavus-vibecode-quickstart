@@ -9,13 +9,9 @@ import {
   Intro,
   Instructions,
   Conversation,
-  NiceForm,
   FinalScreen,
-  SeasonEnded,
-  NaughtyForm,
   Settings,
 } from "./screens";
-import BackgroundAudio from "./components/BackgroundAudio";
 
 function App() {
   const [{ currentScreen }] = useAtom(screenAtom);
@@ -36,14 +32,8 @@ function App() {
         return <Instructions />;
       case "conversation":
         return <Conversation />;
-      case "niceForm":
-        return <NiceForm />;
-      case "naughtyForm":
-        return <NaughtyForm />;
       case "finalScreen":
         return <FinalScreen />;
-      case "seasonEnded":
-        return <SeasonEnded />;
       default:
         return <IntroLoading />;
     }
@@ -54,7 +44,6 @@ function App() {
       {currentScreen !== "introLoading" && <Header />}
       {renderScreen()}
       {currentScreen !== "introLoading" && <Footer />}
-      <BackgroundAudio />
     </main>
   );
 }

@@ -313,6 +313,7 @@ export const Settings: React.FC = () => {
                 <Label htmlFor="apiToken">API Token</Label>
                 <Input
                   id="apiToken"
+                  type="password"
                   value={token || ""}
                   onChange={(e) => {
                     const newToken = e.target.value;

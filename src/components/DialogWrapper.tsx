@@ -20,7 +20,7 @@ export const DialogWrapper = ({ children }: { children: React.ReactNode }) => {
     >
       <img
         src="/images/dialogBlur.svg"
-        alt="santa"
+        alt="background"
         className="absolute inset-0 h-full w-full object-cover"
       />
       {children || (
@@ -63,7 +63,7 @@ export const AnimatedWrapper = ({
     >
       <img
         src="/images/dialogBlur.svg"
-        alt="santa"
+        alt="background"
         className="absolute inset-0 h-full w-full object-cover"
       />
       {children}
@@ -126,12 +126,12 @@ export const StaticTextBlockWrapper = ({
     <div className="flex flex-col items-center justify-center">
       <img
         src={imgSrc}
-        alt="gift"
+        alt="icon"
         className="mb-4 size-20 sm:mb-8 lg:size-30"
       />
       <h2
         className={cn(
-          "mb-4 bg-text-primary bg-clip-text pt-1 text-center font-santa text-4.5xl text-transparent sm:max-w-[650px] sm:text-6.5xl lg:text-7xl",
+          "mb-4 bg-text-primary bg-clip-text pt-1 text-center text-4.5xl text-transparent sm:max-w-[650px] sm:text-6.5xl lg:text-7xl",
           titleClassName,
         )}
       >

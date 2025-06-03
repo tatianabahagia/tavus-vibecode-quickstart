@@ -15,7 +15,7 @@ import zoomSound from "@/assets/sounds/zoom.mp3";
 import { Button } from "@/components/ui/button";
 import { apiTokenAtom } from "@/store/tokens";
 import { quantum } from 'ldrs';
-import santaVideo from "@/assets/video/gloria.mp4";
+import gloriaVideo from "@/assets/video/gloria.mp4";
 
 // Register the quantum loader
 quantum.register();
@@ -125,7 +125,7 @@ export const Instructions: React.FC = () => {
     return (
       <DialogWrapper>
         <video
-          src={santaVideo}
+          src={gloriaVideo}
           autoPlay
           muted
           loop
@@ -133,7 +133,6 @@ export const Instructions: React.FC = () => {
           className="fixed inset-0 h-full w-full object-cover"
         />
         <div className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
-        
         <AnimatedTextBlockWrapper>
           <div className="flex flex-col items-center justify-center gap-4">
             <l-quantum
@@ -154,7 +153,7 @@ export const Instructions: React.FC = () => {
   return (
     <DialogWrapper>
       <video
-        src={santaVideo}
+        src={gloriaVideo}
         autoPlay
         muted
         loop
@@ -162,21 +161,7 @@ export const Instructions: React.FC = () => {
         className="fixed inset-0 h-full w-full object-cover"
       />
       <div className="fixed inset-0 bg-black/60 backdrop-blur-sm" />
-      
       <AnimatedTextBlockWrapper>
-        <div className="flex justify-center items-center gap-8 mb-2">
-          <div className="w-24 h-24 sm:w-32 sm:h-32">
-            <iframe 
-              src="https://giphy.com/embed/jOgyNBSHNqCuIv7gMa" 
-              width="100%" 
-              height="100%" 
-              frameBorder="0" 
-              className="giphy-embed" 
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-
         <h1 
           className="mb-4 pt-1 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold"
           style={{
@@ -188,11 +173,9 @@ export const Instructions: React.FC = () => {
             color: '#9EEAFF'
           }}>Act Natural.</span>
         </h1>
-
         <p className="max-w-[650px] text-center text-base sm:text-lg text-gray-400 mb-12">
           Have a face-to-face conversation with an AI so real, it feels human—an intelligent agent ready to listen, respond, and act across countless use cases.
         </p>
-
         <Button
           onClick={handleClick}
           className="relative z-20 flex items-center justify-center gap-2 rounded-3xl border border-[rgba(255,255,255,0.3)] px-8 py-2 text-sm text-white transition-all duration-200 hover:text-primary mb-12 disabled:opacity-50"
@@ -221,7 +204,6 @@ export const Instructions: React.FC = () => {
             </div>
           )}
         </Button>
-
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:gap-8 text-gray-400 justify-center">
           <div className="flex items-center gap-3 bg-[rgba(0,0,0,0.2)] px-4 py-2 rounded-full">
             <Mic className="size-5 text-primary" />
@@ -232,7 +214,6 @@ export const Instructions: React.FC = () => {
             Camera access is required
           </div>
         </div>
-
         <span className="absolute bottom-6 px-4 text-sm text-gray-500 sm:bottom-8 sm:px-8 text-center">
           By starting a conversation, I accept the{' '}
           <a href="#" className="text-primary hover:underline">Terms of Use</a> and acknowledge the{' '}

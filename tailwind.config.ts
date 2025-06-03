@@ -6,13 +6,11 @@ export default {
   theme: {
     fontFamily: {
       inter: ["Inter", "sans-serif"],
-      santa: ['"Christmas and Santona"', '"Times New Roman"', "sans-serif"],
     },
     extend: {
       backgroundImage: {
         dialog: "url('./images/modalBG.png')",
         "text-primary": "linear-gradient(91deg, #F083C8 -21.8%, #FFF 86.73%)",
-        "main-bg": "url('./images/santaBG.png')",
       },
       borderRadius: {
         lg: "var(--radius)",
