@@ -20,7 +20,7 @@ The demo stack includes:
 ## 🧑‍💻 Try it Live
 Thanks to StackBlitz, you can spin up and deploy a fork of this demo in under a minute!
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Tavus-Engineering/tavus-examples/tree/main/showcase/cvi-demo?file=src%2FApp.tsx)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Tavus-Engineering/tavus-vibecode-quickstart?file=src%2FApp.tsx)
 
 <br></br>
 ## ⚡ Prerequisites
