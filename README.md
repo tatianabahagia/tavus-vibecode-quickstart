@@ -1,16 +1,11 @@
-# Tavus Conversational Video Interface (CVI) Demo
+# Tavus Vibecode Quickstart
 
 ## 🚀 Introduction
 
-Welcome to the Tavus CVI Demo, a showcase of Tavus's groundbreaking Conversational Video Interface technology. This project demonstrates how you can leverage Tavus APIs to create hyperrealistic, interactive video personas for a wide range of use cases.
-
-With this demo, you can:
-- Explore real-time video interactions powered by Tavus CVI APIs
-- Fork and customize the experience for your own persona or use case
-- Use your own **Persona ID** or **Replica ID** to bring your custom vision to life
+The fastest way to get started vibecoding with Tavus CVI. This React quickstart template provides everything you need to create interactive video experiences powered by Tavus's Conversational Video Interface technology.
 
 <br></br>
-The demo stack includes:
+## 🛠️ Tech Stack
 - React
 - TypeScript
 - Vite
@@ -18,46 +13,37 @@ The demo stack includes:
 - Framer Motion
 <br></br>
 ## 🧑‍💻 Try it Live
-Thanks to StackBlitz, you can spin up and deploy a fork of this demo in under a minute!
+Spin up this template in under a minute with StackBlitz:
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Tavus-Engineering/tavus-vibecode-quickstart?file=src%2FApp.tsx)
 
 <br></br>
-## ⚡ Prerequisites
+## ⚡ Quick Start
 
-1. Create an account on [Tavus Platform](https://platform.tavus.io/api-keys).
-2. Generate an API token in your account settings.
+1. **Get your API credentials:**
+   - Create an account on [Tavus Platform](https://platform.tavus.io/api-keys)
+   - Generate your API token
 
-<br></br>
-## 🍴 Getting Started
-1. **Install dependencies:**
+2. **Run the template:**
    ```bash
    npm install
-   ```
-
-2. **Start the development server:**
-   ```bash
    npm run dev
    ```
 
-3. **Clone and Customize:**  
-   Fork this repository and modify it to create your own unique AI persona. To personalize your experience:
-   - Edit the **persona_id** in the `createConversation.ts` file to match your new persona. You can learn how to [create your own persona](https://docs.tavus.io/sections/conversational-video-interface/creating-a-persona) or persona replicas directly on the [Tavus Platform](https://platform.tavus.io/).
-   - You can also swap in a completely different replica/persona to use this as a simple React template for your next CVI project.
-
-   For example, to update the persona ID, locate the following snippet in `createConversation.ts`:
+3. **Customize your persona:**
+   - Update the `persona_id` in `createConversation.ts` with your own
+   - Learn how to [create your own persona](https://docs.tavus.io/sections/conversational-video-interface/creating-a-persona) on the [Tavus Platform](https://platform.tavus.io/)
 
    ```typescript
    body: JSON.stringify({
-     // Replace with your own Persona ID
      persona_id: "your_persona_id_here",
    }),
    ```
 
 <br></br>
-## 📚 Learn More About Tavus
+## 📚 Resources
 
-- [Developer Documentation](https://docs.tavus.io/)
+- [Tavus Documentation](https://docs.tavus.io/)
 - [API Reference](https://docs.tavus.io/api-reference/)
 - [Tavus Platform](https://platform.tavus.io/)
 - [Daily React Reference](https://docs.daily.co/reference/daily-react)
