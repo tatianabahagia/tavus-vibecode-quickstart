@@ -36,6 +36,7 @@ export const Intro: React.FC = () => {
           <img src="/public/images/vector.svg" alt="Logo" className="mt-2 mb-1" style={{ width: '40px', height: 'auto' }} />
 
           <h1 className="text-xl font-bold text-white mb-1" style={{ fontFamily: 'Source Code Pro, monospace' }}>CVI Demo Playground</h1>
+          <p className="text-sm text-gray-300 mb-2 text-center">Your AI Hackathon Mentor</p>
 
           <div className="flex flex-col gap-2 items-center mt-4">
             <Input

@@ -168,13 +168,13 @@ export const Instructions: React.FC = () => {
             fontFamily: 'Source Code Pro, monospace'
           }}
         >
-          <span className="text-white">See AI?</span>{" "}
+          <span className="text-white">Ready to</span>{" "}
           <span style={{
             color: '#9EEAFF'
-          }}>Act Natural.</span>
+          }}>Build Something Epic?</span>
         </h1>
         <p className="max-w-[650px] text-center text-base sm:text-lg text-gray-400 mb-12">
-          Have a face-to-face conversation with an AI so real, it feels human—an intelligent agent ready to listen, respond, and act across countless use cases.
+          Get face-to-face mentoring from an AI expert who can help you brainstorm, debug, and build your hackathon project. From idea to deployment, I've got your back.
         </p>
         <Button
           onClick={handleClick}
@@ -193,7 +193,7 @@ export const Instructions: React.FC = () => {
           }}
         >
           <Video className="size-5" />
-          Start Video Chat
+          Start Mentoring Session
           {getUserMediaError && (
             <div className="absolute -top-1 left-0 right-0 flex items-center gap-1 text-wrap rounded-lg border bg-red-500 p-2 text-white backdrop-blur-sm">
               <AlertTriangle className="text-red size-4" />
@@ -207,11 +207,11 @@ export const Instructions: React.FC = () => {
         <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:gap-8 text-gray-400 justify-center">
           <div className="flex items-center gap-3 bg-[rgba(0,0,0,0.2)] px-4 py-2 rounded-full">
             <Mic className="size-5 text-primary" />
-            Mic access is required
+            Voice chat enabled
           </div>
           <div className="flex items-center gap-3 bg-[rgba(0,0,0,0.2)] px-4 py-2 rounded-full">
             <Video className="size-5 text-primary" />
-            Camera access is required
+            Video mentoring ready
           </div>
         </div>
         <span className="absolute bottom-6 px-4 text-sm text-gray-500 sm:bottom-8 sm:px-8 text-center">

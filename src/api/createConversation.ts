@@ -24,7 +24,7 @@ export const createConversation = async (
     persona_id: settings.persona || "pd43ffef",
     custom_greeting: settings.greeting !== undefined && settings.greeting !== null 
       ? settings.greeting 
-      : "Hey there! I'm your technical co-pilot! Let's get get started building with Tavus.",
+      : "Hey there, hacker! I'm your AI mentor here to help you crush this hackathon. What are you building?",
     conversational_context: contextString
   };
   
